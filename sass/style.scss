@@ -1,0 +1,24 @@
+@import "../sass/sass-utils/variables";
+@import "../sass/sass-utils/mixins";
+
+@import "../sass/components/buttons";
+@import "../sass/components/dropdown";
+
+@import "../sass/sections/about_us";
+@import "../sass/sections/services";
+@import "../sass/sections/news";
+@import "../sass/sections/contact";
+
+
+
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
