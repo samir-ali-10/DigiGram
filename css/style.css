@@ -142,6 +142,9 @@
   .home .content .buttons {
     justify-content: space-between;
   }
+  .about .content {
+    width: 100%;
+  }
   .about .content img {
     display: none;
   }

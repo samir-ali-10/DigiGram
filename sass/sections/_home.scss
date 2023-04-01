@@ -40,28 +40,34 @@
 /////////////////////////////////////// About //////////////////////////////////////////////
 .about {
     padding-bottom: 150px;
+
     .picture {
         width: 40%;
     }
+
     .content {
         width: 50%;
-        h2{
+        h2 {
             position: relative;
+
             &::before {
                 @include colored-dash;
             }
         }
-        
+
     }
+
     .revenue {
         padding-top: 200px;
     }
 }
+
 /////////////////////////////////////// Services //////////////////////////////////////////////
 .services {
     .content {
         h2 {
             position: relative;
+
             &::before {
                 @include colored-dash;
             }
@@ -88,7 +94,7 @@
     .picture {
         display: none;
     }
-    
+
     .home {
         .content {
             .buttons {
@@ -96,9 +102,11 @@
             }
         }
     }
+
     ////////////// About //////////////////
     .about {
-        .content {
+        .content { 
+            width: 100%;
             img {
                 display: none;
             }
