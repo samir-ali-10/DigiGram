@@ -1,0 +1,8 @@
+.fa-bars {
+    display: none;
+    &:hover {
+        .navbar-nav {
+            // display: block !important; Question 
+        }
+    }
+}

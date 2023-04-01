@@ -1,3 +1,87 @@
+.secondary_color {
+  color: #6c55f9;
+}
+
+.bg_secondary {
+  background-color: #6c55f9;
+}
+
+.active {
+  color: #6c55f9;
+}
+
+.shaded_color {
+  color: #777;
+}
+
+.header_button,
+.info {
+  text-transform: capitalize;
+  color: #777;
+  background-color: transparent;
+  border: 0.5px solid #D3D3D3;
+  padding: 5px 20px;
+}
+
+.header_button {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.watch_video {
+  text-transform: capitalize;
+  padding: 5px 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.watch_video i {
+  padding: 10px 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.fa-bars {
+  display: none;
+}
+.navbar {
+  width: calc(100% - 30px);
+  box-shadow: 1px 1px 5px -2px #777;
+}
+.navbar .nav-link:hover {
+  color: #6c55f9;
+}
+
+.home {
+  padding-bottom: 150px;
+  border-bottom: 1px solid #D3D3D3;
+}
+.home .content h1 {
+  font-weight: 400;
+}
+
+@media (max-width: 991.5px) {
+  .fa-bars {
+    display: block;
+  }
+  .navbar-nav {
+    display: none !important;
+  }
+  .picture {
+    display: none;
+  }
+  .home .content .buttons {
+    justify-content: space-between;
+  }
+}
 :root {
   scroll-behavior: smooth;
 }

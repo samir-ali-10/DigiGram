@@ -1,0 +1,45 @@
+.navbar {
+    width: calc(100% - 30px);
+    box-shadow: 1px 1px 5px -2px $shaded-color;
+    .nav-link:hover {
+        color: $secondary-color;
+    }
+}
+
+
+//////////////////////////////////////////// Home ///////////////////////////////////
+.home {
+    padding-bottom: 150px;
+    border-bottom: 1px solid $border-color;
+    .content {
+        h1 {
+            font-weight: 400;
+        }
+    }
+}
+
+
+
+
+
+//////////////////// Media ///////////////////////
+@media (max-width: 991.5px) {
+    .fa-bars {
+        display: block;
+    }
+    .navbar-nav {
+        display: none !important;
+    }
+
+    ////////////// Home //////////////////
+    .picture {
+        display: none;
+    }
+    .home {
+        .content {
+            .buttons {
+                justify-content: space-between;
+            }
+        }
+    }
+}
