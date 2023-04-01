@@ -68,6 +68,38 @@
   font-weight: 400;
 }
 
+.information {
+  border-bottom: 1px solid #D3D3D3;
+}
+.information .content .infos .parag {
+  margin-inline-start: 10px;
+}
+.information .content .infos .parag p {
+  font-size: 0.8rem;
+}
+
+.about .picture {
+  width: 40%;
+}
+.about .content {
+  width: 50%;
+}
+.about .content h2 {
+  position: relative;
+}
+.about .content h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #6c55f9;
+  height: 3px;
+  width: 40px;
+}
+.about .revenue {
+  padding-top: 200px;
+}
+
 @media (max-width: 991.5px) {
   .fa-bars {
     display: block;
@@ -81,6 +113,14 @@
   .home .content .buttons {
     justify-content: space-between;
   }
+  .about .content img {
+    display: none;
+  }
+}
+@media (max-width: 575.5px) {
+  .about .revenue {
+    flex-direction: column;
+  }
 }
 :root {
   scroll-behavior: smooth;
@@ -92,6 +132,7 @@
 
 body {
   margin: 0;
+  height: 5000px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 .navbar {
     width: calc(100% - 30px);
     box-shadow: 1px 1px 5px -2px $shaded-color;
+
     .nav-link:hover {
         color: $secondary-color;
     }
@@ -11,12 +12,57 @@
 .home {
     padding-bottom: 150px;
     border-bottom: 1px solid $border-color;
+
     .content {
         h1 {
             font-weight: 400;
         }
     }
 }
+
+/////////////////////////////////////// Information //////////////////////////////////////////////
+.information {
+    border-bottom: 1px solid $border-color;
+
+    .content {
+        .infos {
+            .parag {
+                margin-inline-start: 10px;
+
+                p {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+/////////////////////////////////////// About //////////////////////////////////////////////
+.about {
+    .picture {
+        width: 40%;
+    }
+    .content {
+        width: 50%;
+        h2{
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                background-color: $secondary-color;
+                height: 3px;
+                width: 40px;
+            }
+        }
+
+    }
+    .revenue {
+        padding-top: 200px;
+    }
+}
+
 
 
 
@@ -27,6 +73,7 @@
     .fa-bars {
         display: block;
     }
+
     .navbar-nav {
         display: none !important;
     }
@@ -35,11 +82,29 @@
     .picture {
         display: none;
     }
+    
     .home {
         .content {
             .buttons {
                 justify-content: space-between;
             }
+        }
+    }
+    ////////////// About //////////////////
+    .about {
+        .content {
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 575.5px) {
+    .about {
+        .revenue {
+            flex-direction: column;
         }
     }
 }
