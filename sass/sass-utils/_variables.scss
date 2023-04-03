@@ -1,6 +1,20 @@
 $shaded-color: #777;
 $secondary-color: #6c55f9;
 $border-color: #D3D3D3;
+$yellow-color: rgb(255, 147, 31);
+$background-color: #f6f5fc;
+
+.bg_color {
+    background-color: $background-color;
+}
+
+.yellow_color {
+    color: $yellow-color;
+}
+
+.border_color {
+    color: $border-color;
+}
 
 .secondary_color {
     color: $secondary-color;
