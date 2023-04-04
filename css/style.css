@@ -429,6 +429,11 @@ footer .row .socials i {
     flex-direction: column;
   }
 }
+@media (max-width: 399.5px) {
+  .copyright .container {
+    flex-direction: column;
+  }
+}
 :root {
   scroll-behavior: smooth;
 }
