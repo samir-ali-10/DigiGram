@@ -48,3 +48,13 @@
         -o-border-radius: 50%;
     }
 }
+
+.discover {
+    padding: 5px 15px;
+    border: 1px solid $secondary-color;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}

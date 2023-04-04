@@ -52,6 +52,10 @@
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 ////////////////////////Navbar/////////////////////////////
 
 .navbar {
@@ -229,7 +233,7 @@
 .contact {
     padding: 100px 0;
     border-bottom: 1px solid $border-color;
-    
+
     ul {
         li {
             i {
@@ -248,9 +252,9 @@
             }
         }
     }
-    
+
     form {
-        
+
         input,
         textarea {
             border: 1px solid $border-color;
@@ -261,9 +265,9 @@
             -o-border-radius: 6px;
             outline: none;
         }
-        
+
         flex-direction: column;
-        
+
         input[type="submit"] {
             width: fit-content;
             border-radius: 20px;
@@ -274,9 +278,105 @@
         }
     }
 }
+
 /////////////////////////////////////// Blog //////////////////////////////////////////////
 .blog {
     padding: 100px 0;
+
+    .card {
+        border: none;
+        box-shadow: 0px 2px 6px 0px $shaded-color;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        .card-body {
+
+
+            h5 {
+                font-size: 0.9rem;
+            }
+
+            h6 {
+                font-size: 0.8rem;
+            }
+
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+
+            a {
+                i {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .active {
+            margin-bottom: 111px;
+        }
+    }
+}
+
+/////////////////////////////////////// Blog //////////////////////////////////////////////
+.clients {
+    padding: 100px 0;
+}
+
+/////////////////////////////////////// Footer //////////////////////////////////////////////
+footer {
+    padding: 100px 0 60px 0;
+
+    .row {
+        h4 {
+            color: #575757;
+            font-weight: 700;
+        }
+
+        ul {
+            li {
+                text-transform: capitalize;
+                color: $shaded-color;
+                margin-bottom: 15px;
+            }
+        }
+
+        input {
+            border: 1px solid $border-color;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+        }
+        .socials {
+            i {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                background-color: #eeee;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+}
+        }
+    }
 }
 
 
@@ -311,12 +411,13 @@
     .about {
         .content {
             width: 100%;
-            
+
             img {
                 display: none;
             }
         }
     }
+
     ////////////// Pricing //////////////////
     .pricing {
         .card {
@@ -326,16 +427,30 @@
 
     ////////////// News //////////////////
     .news {
-        
+
         .image {
             margin-bottom: 30px;
         }
-        
+
     }
+
     ////////////// Contact //////////////////
     .contact {
         .in_touch {
             margin-bottom: 50px;
+        }
+    }
+
+    ////////////// Clients //////////////////
+    .clients {
+        .container {
+            flex-direction: column;
+
+            .client {
+                padding-bottom: 20px;
+                margin-bottom: 50px;
+                border-bottom: 1px solid $border-color;
+            }
         }
     }
 }

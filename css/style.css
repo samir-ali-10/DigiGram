@@ -75,6 +75,16 @@
   -o-border-radius: 50%;
 }
 
+.discover {
+  padding: 5px 15px;
+  border: 1px solid #6c55f9;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
 .fa-bars {
   display: none;
 }
@@ -123,6 +133,10 @@
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -302,6 +316,76 @@
 .blog {
   padding: 100px 0;
 }
+.blog .card {
+  border: none;
+  box-shadow: 0px 2px 6px 0px #777;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.blog .card .card-body h5 {
+  font-size: 0.9rem;
+}
+.blog .card .card-body h6 {
+  font-size: 0.8rem;
+}
+.blog .card .card-body img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.blog .card .card-body p {
+  font-size: 1.4rem;
+}
+.blog .card .card-body a i {
+  font-size: 0.8rem;
+}
+.blog .card .active {
+  margin-bottom: 111px;
+}
+
+.clients {
+  padding: 100px 0;
+}
+
+footer {
+  padding: 100px 0 60px 0;
+}
+footer .row h4 {
+  color: #575757;
+  font-weight: 700;
+}
+footer .row ul li {
+  text-transform: capitalize;
+  color: #777;
+  margin-bottom: 15px;
+}
+footer .row input {
+  border: 1px solid #D3D3D3;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+footer .row .socials i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 
 @media (max-width: 991.5px) {
   .fa-bars {
@@ -331,6 +415,14 @@
   .contact .in_touch {
     margin-bottom: 50px;
   }
+  .clients .container {
+    flex-direction: column;
+  }
+  .clients .container .client {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #D3D3D3;
+  }
 }
 @media (max-width: 575.5px) {
   .about .revenue {
@@ -347,7 +439,6 @@
 
 body {
   margin: 0;
-  height: 5000px;
 }
 
 /*# sourceMappingURL=style.css.map */
