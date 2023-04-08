@@ -7,3 +7,13 @@
     height: 3px;
     width: 40px;
 }
+
+@mixin arabic-colored-dash {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    background-color: $secondary-color;
+    height: 3px;
+    width: 40px;
+}

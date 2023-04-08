@@ -15,6 +15,11 @@
 }
 
 nav {
+    .navbar-brand {
+        direction: ltr;
+        margin-left: 15px;
+    }
+
     &.about_us {
         width: 100%;
     }
@@ -38,6 +43,34 @@ nav {
     .about_buttons {
         .more_details {
             border: none;
+        }
+    }
+}
+
+.about.arabic {
+    .content {
+        width: 50%;
+
+        h2 {
+            position: relative;
+
+            &::before {
+                @include arabic-colored-dash;
+            }
+        }
+
+    }
+}
+
+footer {
+    h3 {
+        direction: ltr;
+        text-align: right;
+    }
+    .links {
+        .phone {
+            direction: ltr;
+            text-align: right;
         }
     }
 }

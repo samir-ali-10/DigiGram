@@ -11,6 +11,9 @@
 @import "../sass/sections/contact";
 
 
+html:lang(ar) {
+    direction: rtl;
+}
 
 :root {
     scroll-behavior: smooth;

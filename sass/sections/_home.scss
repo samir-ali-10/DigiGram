@@ -68,7 +68,7 @@ a {
         -moz-transition: 3s;
         -ms-transition: 3s;
         -o-transition: 3s;
-}
+    }
 
     .navbar-nav {
         display: flex;
@@ -81,6 +81,7 @@ a {
 
     .nav-link:hover {
         color: $secondary-color;
+        
     }
 
     .fa-bars {
@@ -420,7 +421,7 @@ footer {
     }
 
     .navbar {
-        .logo {
+        .navigation {
             .fa-bars {
                 display: block;
             }
@@ -428,18 +429,20 @@ footer {
     }
 
     .navbar {
-        .logo {
-            .navigation {
-                &:hover {
-                    .navbar-nav {
-                        display: flex;
-                    }
-                    .fa-bars {
-                        display: none;
-                    }
+
+        .navigation {
+            &:hover {
+                .navbar-nav {
+                    margin-top: 50px;
+                    display: flex;
+                }
+
+                .fa-bars {
+                    display: none;
                 }
             }
         }
+
     }
 
     ////////////// Home //////////////////

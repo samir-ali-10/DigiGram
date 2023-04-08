@@ -85,6 +85,17 @@
   -o-border-radius: 40px;
 }
 
+.change_lang {
+  background-color: transparent;
+  padding: 5px 20px;
+  border: 1px solid #D3D3D3;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
 .fa-bars {
   display: none;
 }
@@ -414,13 +425,14 @@ footer .row .socials i {
   .navbar .navbar-nav {
     display: none;
   }
-  .navbar .logo .fa-bars {
+  .navbar .navigation .fa-bars {
     display: block;
   }
-  .navbar .logo .navigation:hover .navbar-nav {
+  .navbar .navigation:hover .navbar-nav {
+    margin-top: 50px;
     display: flex;
   }
-  .navbar .logo .navigation:hover .fa-bars {
+  .navbar .navigation:hover .fa-bars {
     display: none;
   }
   .picture {
@@ -479,6 +491,10 @@ footer .row .socials i {
   -o-border-radius: 50%;
 }
 
+nav .navbar-brand {
+  direction: ltr;
+  margin-left: 15px;
+}
 nav.about_us {
   width: 100%;
 }
@@ -498,6 +514,31 @@ nav.about_us {
 
 .about .about_buttons .more_details {
   border: none;
+}
+
+.about.arabic .content {
+  width: 50%;
+}
+.about.arabic .content h2 {
+  position: relative;
+}
+.about.arabic .content h2::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  background-color: #6c55f9;
+  height: 3px;
+  width: 40px;
+}
+
+footer h3 {
+  direction: ltr;
+  text-align: right;
+}
+footer .links .phone {
+  direction: ltr;
+  text-align: right;
 }
 
 .blog {
@@ -521,6 +562,10 @@ nav.about_us {
 .blog .buttons button.active {
   background-color: #6c55f9;
   color: white;
+}
+
+html:lang(ar) {
+  direction: rtl;
 }
 
 :root {
