@@ -1,0 +1,11 @@
+.services.arabic {
+    .content {
+        h2 {
+            position: relative;
+
+            &::before {
+                @include arabic-colored-dash;
+            }
+        }
+    }
+}
