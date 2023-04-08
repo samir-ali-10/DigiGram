@@ -500,6 +500,29 @@ nav.about_us {
   border: none;
 }
 
+.blog {
+  border-bottom: 1px solid #D3D3D3;
+}
+.blog .buttons {
+  margin-top: 50px;
+}
+.blog .buttons button {
+  width: fit-content;
+  background-color: transparent;
+  color: #777;
+  border: 1px solid #D3D3D3;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 5px 10px;
+}
+.blog .buttons button.active {
+  background-color: #6c55f9;
+  color: white;
+}
+
 :root {
   scroll-behavior: smooth;
 }
