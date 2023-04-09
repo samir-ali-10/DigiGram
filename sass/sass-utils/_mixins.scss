@@ -1,19 +1,18 @@
-@mixin colored-dash {
+@mixin dash-default {
     content: "";
     position: absolute;
-    left: 0;
     bottom: -10px;
     background-color: $secondary-color;
     height: 3px;
     width: 40px;
 }
 
+@mixin colored-dash {
+    @include dash-default;
+    left: 0;
+}
+
 @mixin arabic-colored-dash {
-    content: "";
-    position: absolute;
+    @include dash-default;
     right: 0;
-    bottom: -10px;
-    background-color: $secondary-color;
-    height: 3px;
-    width: 40px;
 }
