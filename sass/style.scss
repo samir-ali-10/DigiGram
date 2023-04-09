@@ -1,14 +1,15 @@
-@import "../sass/sass-utils/variables";
-@import "../sass/sass-utils/mixins";
+@import "./sass-utils/variables";
+@import "./sass-utils/mixins";
+@import "./sass-utils/helpers";
 
-@import "../sass/components/buttons";
-@import "../sass/components/dropdown";
+@import "./components/buttons";
+@import "./components/dropdown";
 
-@import "../sass/sections/home";
-@import "../sass/sections/about_us";
-@import "../sass/sections/services";
-@import "../sass/sections/news";
-@import "../sass/sections/contact";
+@import "./sections/home";
+@import "./sections/about_us";
+@import "./sections/services";
+@import "./sections/news";
+@import "./sections/contact";
 
 
 html:lang(ar) {
