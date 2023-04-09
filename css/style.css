@@ -156,11 +156,15 @@ a {
 }
 .navbar .navbar-nav {
   display: flex;
-  transition: 0.9s;
-  -webkit-transition: 0.9s;
-  -moz-transition: 0.9s;
-  -ms-transition: 0.9s;
-  -o-transition: 0.9s;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.navbar .navbar-nav.show {
+  height: 250px;
+  margin-top: 50px;
 }
 .navbar .nav-link:hover {
   color: #6c55f9;
@@ -416,13 +420,6 @@ footer .row .socials i {
   }
   .navbar .navigation .fa-bars {
     display: block;
-  }
-  .navbar .navigation:hover .navbar-nav {
-    margin-top: 50px;
-    height: 250px;
-  }
-  .navbar .navigation:hover .fa-bars {
-    display: none;
   }
   .picture {
     display: none;

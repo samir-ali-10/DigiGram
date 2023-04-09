@@ -64,16 +64,20 @@ a {
 
     .navbar-nav {
         display: flex;
-        transition: .9s;
-        -webkit-transition: .9s;
-        -moz-transition: .9s;
-        -ms-transition: .9s;
-        -o-transition: .9s;
-}
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        &.show {
+            height: 250px;
+            margin-top: 50px;
+        }
+    }
 
     .nav-link:hover {
         color: $secondary-color;
-        
+
     }
 
     .fa-bars {
@@ -416,22 +420,22 @@ footer {
         }
     }
 
-    .navbar {
+    // .navbar {
 
-        .navigation {
-            &:hover {
-                .navbar-nav {
-                    margin-top: 50px;
-                    height: 250px;
-                }
+    //     .navigation {
+    //         &:hover {
+    //             .navbar-nav {
+    //                 margin-top: 50px;
+    //                 height: 250px;
+    //             }
 
-                .fa-bars {
-                    display: none;
-                }
-            }
-        }
+    //             .fa-bars {
+    //                 display: none;
+    //             }
+    //         }
+    //     }
 
-    }
+    // }
 
     ////////////// Home //////////////////
     .picture {
